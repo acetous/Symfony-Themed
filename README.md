@@ -21,7 +21,7 @@ Example:
  * `default-frontend.css`
  * `default-backend.css`
 
-Please include this stylesheets in your themes `css` directory. They need to be copied into the `/web/css` folder.
+Please include this stylesheets in your themes root directory. They need to be copied into the `/web/css` folder.
 
 ## Only change what you need
 
@@ -31,7 +31,7 @@ Apart from that the default-stylesheet will be included if a custom one cannot b
 
 # Installation
 
- * Copy this classes to you `lib` directory.
+ * Copy this classes to you `lib` directory (the task to `lib/task` and filter to `lib/filter`).
  * Move your templates.
  * Edit your `filters.yml`. Add one filter for the themes logic:
    <pre>rendering: ~
@@ -42,3 +42,7 @@ Apart from that the default-stylesheet will be included if a custom one cannot b
    execution: ~
    </pre>
  * Done!
+
+## Setup a theme
+
+Just run the `./symfony themed:setup` task to setup all themes or `./symfony themed:setup name` to setup a specific theme.

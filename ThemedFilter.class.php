@@ -15,7 +15,7 @@ class ThemedFilter extends sfFilter {
 		    '-' . $this->context->getConfiguration()->getApplication() .
 		    '.css';
 	    
-	    if (file_exists(sfConfig::get('sf_web_dir') . '/css/' . $stylesheet)) {
+	    if (is_readable(sfConfig::get('sf_web_dir') . '/css/' . $stylesheet)) {
 		$response->addStylesheet($stylesheet);
 	    } else {
 		$response->addStylesheet($stylesheetDefault);
