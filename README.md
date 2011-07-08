@@ -1,8 +1,8 @@
-# Support for multiple Themes in Symfony
+# Support for Multiple Themes / Styles in Symfony
 
 This will allow you to use multiple themes for symfony, each with it's own templates and stylesheets.
 
-## New directory for templates
+## New Directory for Templates
 
 The templates have to be stored in `sf_root_dir/themes/application/themename/module`. A theme named `default` has to be present. Layouts have to be placed in `sf_root_dir/themes/themename/application`.
 
@@ -23,7 +23,7 @@ Example:
 
 Please include this stylesheets in your themes root directory. They need to be copied into the `/web/css` folder.
 
-## Only change what you need
+## Only Change What You Need
 
 All themes (except `default`) will load the default-templates if a custom one is not found. This way you just need to create the template files you want to alter.
 
@@ -43,11 +43,11 @@ Apart from that the default-stylesheet will be included if a custom one cannot b
    </pre>
  * Done!
 
-## Setup a theme
+## Setup a Theme
 
 Just run the `./symfony themed:setup` task to setup all themes or `./symfony themed:setup name` to setup a specific theme.
 
-# Anatomy of a theme
+# Anatomy of a Theme
 
 This shows the basic directory structure in your project's root folder:
 
