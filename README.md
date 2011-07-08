@@ -56,18 +56,18 @@ This shows the basic directory structure in your project's root folder:
 /config
 /lib
 /themes
-  /default
-    /frontend
-      /post
-        /indexSuccess.php
-        /showSuccess.php
-      /layout.php
-    /backend
-      /post
-        /indexSuccess.php
-        /editSuccess.php
-      /layout.php
-    /default-frontend.css
-    /default-backend.css
+    /default
+        /frontend
+            /post
+                /indexSuccess.php
+                /showSuccess.php
+            /layout.php
+        /backend
+            /post
+                /indexSuccess.php
+                /editSuccess.php
+            /layout.php
+        /default-frontend.css
+        /default-backend.css
 /web
 </pre>
