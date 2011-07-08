@@ -35,7 +35,7 @@ Apart from that the default-stylesheet will be included if a custom one cannot b
  * Move your templates.
  * Edit your `filters.yml`. Add one filter for the themes logic:
    <pre>rendering: ~
-   security:  ~  
+   security:  ~
    themes:
      class: ThemedFilter
    cache:     ~
