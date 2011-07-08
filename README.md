@@ -46,3 +46,28 @@ Apart from that the default-stylesheet will be included if a custom one cannot b
 ## Setup a theme
 
 Just run the `./symfony themed:setup` task to setup all themes or `./symfony themed:setup name` to setup a specific theme.
+
+# Anatomy of a theme
+
+This shows the basic directory structure in your project's root folder:
+
+<pre>
+/apps
+/config
+/lib
+/themes
+  /default
+    /frontend
+      /post
+        /indexSuccess.php
+        /showSuccess.php
+      /layout.php
+    /backend
+      /post
+        /indexSuccess.php
+        /editSuccess.php
+      /layout.php
+    /default-frontend.css
+    /default-backend.css
+/web
+</pre>
