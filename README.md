@@ -15,3 +15,13 @@ Example:
 ## Only change what you need
 
 All themes (except `default`) will load the default-templates if a custom one is not found. This way you just need to create the template files you want to alter.
+
+# Installation
+
+ * Copy this classes to you `lib` directory.
+ * Create a `module.yml` in your *application's* config directory, containing
+   <pre>all:
+      view\_class: Themed
+      partial\_view\_class: Themed
+   </pre>
+ * Move your templates.
