@@ -22,8 +22,13 @@ class ThemedFilter extends sfFilter {
 	    }
 	    
 	    // set view classes
-	    sfConfig::set('mod_post_view_class', 'Themed');
-	    sfConfig::set('mod_post_partial_view_class', 'Themed');
+	    $moduleDir = sfConfig::get('sf_root_dir') . '/themes/default/' . $this->context->getConfiguration()->getApplication();
+	    foreach(scandir($moduleDir) as $module) {
+		if (substr($module, 0, 1) == '.' || !is_dir($moduleDir . '/' . $module))
+		    continue;
+		sfConfig::set('mod_'.$module.'_view_class', 'Themed');
+		sfConfig::set('mod_'.$module.'_partial_view_class', 'Themed');
+	    }
 	}
 
 	$filterChain->execute();
