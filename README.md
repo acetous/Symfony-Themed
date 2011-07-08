@@ -19,9 +19,13 @@ All themes (except `default`) will load the default-templates if a custom one is
 # Installation
 
  * Copy this classes to you `lib` directory.
- * Create a `module.yml` in your *application's* config directory, containing
-   <pre>all:
-      view\_class: Themed
-      partial\_view\_class: Themed
-   </pre>
  * Move your templates.
+ * Edit your `filters.yml`. Add one filter for the themes logic:
+   <pre>rendering: ~
+   security:  ~  
+   themes:
+     class: ThemedFilter
+   cache:     ~
+   execution: ~
+   </pre>
+ * Done!
